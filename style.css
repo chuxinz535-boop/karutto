@@ -1,0 +1,65 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --border: #ddd;
+  --bg: #fff;
+  --accent: #1a5fb4;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.8;
+}
+header, main, footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+header { padding-top: 24px; padding-bottom: 8px; }
+header .site-name { font-size: 1.4rem; font-weight: bold; }
+header nav a { margin-right: 16px; color: var(--accent); text-decoration: none; }
+main { padding-bottom: 40px; }
+h1 { font-size: 1.5rem; line-height: 1.4; }
+h2 { font-size: 1.15rem; margin-top: 2em; }
+ul.articles { list-style: none; padding: 0; }
+ul.articles li {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+ul.articles .title { font-weight: bold; }
+.status {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+.placeholder {
+  background: #fff8e1;
+  border: 1px dashed #c9a227;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 12px 0;
+}
+figure { margin: 16px 0; }
+figure .photo-box {
+  border: 1px dashed var(--border);
+  color: var(--muted);
+  text-align: center;
+  padding: 40px 0;
+}
+figcaption { font-size: 0.85rem; color: var(--muted); text-align: center; }
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  padding-bottom: 32px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
